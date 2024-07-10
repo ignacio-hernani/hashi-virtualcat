@@ -1,6 +1,6 @@
 # Configures a builder plugin and is invoked by the build block, how to connect, what virtualization type, image details etc.
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "hashicat-image"
+  ami_name      = "hashicat-image-${md5(timestamp())}"
   instance_type = "t2.small"
   region        = var.region
   source_ami_filter {
