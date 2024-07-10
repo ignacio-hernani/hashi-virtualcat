@@ -1,7 +1,7 @@
 # Configures a builder plugin and is invoked by the build block, how to connect, what virtualization type, image details etc.
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "packer-linux-aws-3"
-  instance_type = "t2.micro"
+  ami_name      = "hashicat-image"
+  instance_type = "t2.small"
   region        = var.region
   source_ami_filter {
     filters = {

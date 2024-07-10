@@ -19,5 +19,5 @@ variable "packer_bucket_name" {
 variable "packer_channel_name" {
   description = "Specifies the Packer channel name."
   type        = string
-  default     = "latest"
+  default     = "cat-channel"
 }
