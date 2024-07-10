@@ -1,6 +1,6 @@
 data "hcp_packer_artifact" "linux-images" {
   bucket_name   = var.packer_bucket_name
-  channel_name  = var.packer_channel_name
+  channel_name  = "prod"
   platform      = "aws"
   region        = var.region
 }
