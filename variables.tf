@@ -7,7 +7,7 @@ variable "instance_type" {
 variable "region" {
   description = "Specifies the AWS region."
   type        = string
-  default     = "us-west-2"
+  default     = "us-east-2"
 }
 
 variable "packer_bucket_name" {
