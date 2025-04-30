@@ -25,7 +25,7 @@ variable "packer_channel_name" {
 variable "allowed_ingress_cidrs" {
   type        = list(string)
   description = "CIDRs allowed to reach the instance (e.g. your office VPN)"
-  default     = ["192.168.0.0/24"] # <-- change
+  default     = ["80.26.0.0/16"] # <-- change
 }
 
 variable "allowed_egress_cidrs" {
