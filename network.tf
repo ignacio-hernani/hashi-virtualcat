@@ -25,14 +25,14 @@ resource "aws_subnet" "hashicat" {
   }
 }
 
-#resource "aws_subnet" "static_subnet" {
-#  vpc_id     = aws_vpc.hashicat.id
-#  cidr_block = "10.100.10.0/24"
-#
-#  tags = {
-#    name = "${random_string.preffix.result}-static-subnet"
-#  }
-#}
+resource "aws_subnet" "static_subnet" {
+  vpc_id     = aws_vpc.hashicat.id
+  cidr_block = "10.100.10.0/24"
+
+  tags = {
+    name = "${random_string.preffix.result}-static-subnet"
+  }
+}
 
 resource "aws_route_table" "hashicat" {
   vpc_id = aws_vpc.hashicat.id
