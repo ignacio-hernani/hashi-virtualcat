@@ -25,11 +25,23 @@ variable "packer_channel_name" {
 variable "allowed_ingress_cidrs" {
   type        = list(string)
   description = "CIDRs allowed to reach the instance (e.g. your office VPN)"
-  default     = ["80.26.0.0/16"] # <-- change
+  default     = ["80.26.0.0/16"] # <-- change for snyk
 }
 
 variable "allowed_egress_cidrs" {
   type        = list(string)
   description = "CIDRs the instance is allowed to talk to"
-  default     = ["10.0.0.0/16"] # <-- change
+  default     = ["10.0.0.0/16"] # <-- change for snyk
+}
+
+variable "hashicat_subnet" {
+  type        = string
+  description = "hashicat public subnet"
+  default     = "10.0.10.0/24"
+}
+
+variable "static_subnet" {
+  type        = string
+  description = "static assets public subnet"
+  default     = "10.100.10.0/24"
 }
