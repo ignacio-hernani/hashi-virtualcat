@@ -1,4 +1,5 @@
 # Outputs file
+
 output "first_create_key" {
   description = "First, create a private key file from the generated private key, you need to remove the backslash before the first double quote and the last double quote"
   value       = "printf \"${tls_private_key.hashicat.private_key_openssh}\" > ./private_key.pem"
