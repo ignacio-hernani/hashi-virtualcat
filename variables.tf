@@ -43,5 +43,5 @@ variable "hashicat_subnet" {
 variable "static_subnet" {
   type        = string
   description = "static assets public subnet"
-  default     = "10.100.10.0/24"
+  default     = "10.0.100.0/24"
 }
