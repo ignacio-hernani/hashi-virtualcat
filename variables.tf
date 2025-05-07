@@ -34,6 +34,12 @@ variable "allowed_egress_cidrs" {
   default     = ["10.0.0.0/16"] # <-- change for snyk
 }
 
+variable "cidr" {
+  type        = string
+  description = "CIDR block to associate with the VPC"
+  default     = "10.0.0.0/16"
+}
+
 variable "hashicat_subnet" {
   type        = string
   description = "hashicat public subnet"
