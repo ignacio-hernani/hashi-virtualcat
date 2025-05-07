@@ -51,3 +51,9 @@ variable "static_subnet" {
   description = "static assets public subnet"
   default     = "10.0.100.0/24"
 }
+
+variable "route" {
+  type        = string
+  description = "CIDR block for the route table"
+  default     = "0.0.0.0/0"
+}
