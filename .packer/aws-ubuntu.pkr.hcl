@@ -2,7 +2,7 @@
 source "amazon-ebs" "ubuntu" {
   ami_name      = "hashicat-image-${md5(timestamp())}"
   instance_type = "t2.small"
-  region        = var.region
+  region        = "us-east-2"
   source_ami_filter {
     filters = {
       name                = "ubuntu/images/*ubuntu-jammy-22.04-amd64-server-*"
